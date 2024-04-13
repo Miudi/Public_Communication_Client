@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="300.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.SearchController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <GridPane prefHeight="300.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label text="Przystanek poczatkowy:" textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Label>
+        <ComboBox fx:id="poczatek" prefWidth="150.0" GridPane.columnIndex="1" />
+        <Label text="Przystanek koncowy:" textAlignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Label>
+        <ComboBox fx:id="koniec" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label text="Godzina odjazdu:" textAlignment="CENTER" GridPane.rowIndex="2">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Label>
+      <Label text="Minuta odjazdu:" textAlignment="CENTER" GridPane.rowIndex="3">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Spinner fx:id="godzina" prefHeight="26.0" prefWidth="66.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Spinner fx:id="minuta" prefHeight="26.0" prefWidth="66.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    </GridPane>
+    <Button fx:id="szukaj" onAction="#handle_szukaj" text="Szukaj" textAlignment="CENTER" GridPane.rowIndex="3">
+      <font>
+         <Font name="Arial" size="15.0" />
+      </font></Button>
+    <Button fx:id="wstecz" onAction="#handle_wstecz" text="Wstecz" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.rowIndex="3">
+      <font>
+         <Font name="Arial" size="15.0" />
+      </font></Button>
+   <Label fx:id="output" textAlignment="CENTER">
+      <font>
+         <Font name="Arial" size="20.0" />
+      </font>
+   </Label>
+</VBox>

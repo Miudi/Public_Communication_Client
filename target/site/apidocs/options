@@ -1,0 +1,26 @@
+--class-path
+'C:/Users/Miudi/.m2/repository/org/openjfx/javafx-controls/19/javafx-controls-19.jar;C:/Users/Miudi/.m2/repository/org/openjfx/javafx-graphics/19/javafx-graphics-19.jar;C:/Users/Miudi/.m2/repository/org/openjfx/javafx-base/19/javafx-base-19.jar;C:/Users/Miudi/.m2/repository/org/openjfx/javafx-fxml/19/javafx-fxml-19.jar;C:/Users/Miudi/.m2/repository/org/json/json/20211205/json-20211205.jar'
+--module-path
+'C:/Users/Miudi/.m2/repository/org/openjfx/javafx-controls/19/javafx-controls-19-win.jar;C:/Users/Miudi/.m2/repository/org/openjfx/javafx-fxml/19/javafx-fxml-19-win.jar;C:/Users/Miudi/.m2/repository/org/kordamp/bootstrapfx/bootstrapfx-core/0.4.0/bootstrapfx-core-0.4.0.jar;C:/Users/Miudi/.m2/repository/org/openjfx/javafx-graphics/19/javafx-graphics-19-win.jar;C:/Users/Miudi/.m2/repository/org/openjfx/javafx-base/19/javafx-base-19-win.jar'
+--patch-module
+com.example.test='C:/Users/Miudi/Desktop/MySQL_klient-serwer/NOWEEEEE/CLIENT/src/main/java'
+-encoding
+'UTF-8'
+-protected
+--module-source-path
+'C:/Users/Miudi/Desktop/MySQL_klient-serwer/NOWEEEEE/CLIENT/target/site/apidocs/src'
+-author
+-bottom
+'Copyright &#169; 2023. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/Users/Miudi/Desktop/MySQL_klient-serwer/NOWEEEEE/CLIENT/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'test 1.0-SNAPSHOT API'
+-use
+-version
+-windowtitle
+'test 1.0-SNAPSHOT API'

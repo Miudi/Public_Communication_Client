@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.LoginController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <GridPane>
+     <columnConstraints>
+       <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+       <ColumnConstraints fillWidth="false" halignment="CENTER" hgrow="SOMETIMES" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="100.0" valignment="CENTER" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="100.0" valignment="CENTER" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <TextField fx:id="adminUser" GridPane.columnIndex="1">
+            <font>
+               <Font size="18.0" />
+            </font></TextField>
+         <PasswordField fx:id="adminPass" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <font>
+               <Font size="18.0" />
+            </font></PasswordField>
+         <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Login:" textAlignment="RIGHT">
+            <font>
+               <Font name="Arial" size="18.0" />
+            </font></Label>
+         <Label alignment="CENTER_RIGHT" contentDisplay="RIGHT" text="Hasło:" textAlignment="RIGHT" GridPane.rowIndex="1">
+            <font>
+               <Font name="Arial" size="18.0" />
+            </font></Label>
+      </children>
+   </GridPane>
+   <Label fx:id="blad" textAlignment="CENTER" textFill="RED">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+    <Button fx:id="login" onAction="#handle_login" text="Zaloguj" textAlignment="CENTER">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+    <Button fx:id="wstecz" onAction="#handle_wstecz" text="Wstecz">
+      <font>
+         <Font size="18.0" />
+      </font></Button>
+</VBox>

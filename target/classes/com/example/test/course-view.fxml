@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" minHeight="480.0" minWidth="600.0" prefHeight="480.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.CourseController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label fx:id="liniaLabel" text="Linia: " textAlignment="CENTER">
+      <font>
+         <Font name="Arial" size="35.0" />
+      </font></Label>
+    <GridPane fx:id="gridPane" prefHeight="300.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+        </columnConstraints>
+        <VBox alignment="TOP_CENTER" prefHeight="480.0" prefWidth="300.0" GridPane.columnIndex="0">
+            <Label fx:id="kier1" alignment="TOP_CENTER" contentDisplay="CENTER" text="" textAlignment="CENTER" />
+        </VBox>
+        <VBox alignment="TOP_CENTER" prefHeight="480.0" prefWidth="300.0" GridPane.columnIndex="1">
+            <Label fx:id="kier2" alignment="TOP_CENTER" contentDisplay="CENTER" text="" textAlignment="CENTER" />
+        </VBox>
+      <rowConstraints>
+         <RowConstraints />
+      </rowConstraints>
+    </GridPane>
+    <Button fx:id="wstecz" onAction="#handle_wstecz" text="Wstecz" textAlignment="CENTER">
+      <font>
+         <Font size="20.0" />
+      </font></Button>
+</VBox>

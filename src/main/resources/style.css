@@ -1,0 +1,29 @@
+.table-view{
+    -fx-background-clor: transparent;
+    -fx-alignment-alignment: center;
+}
+
+
+
+.table-cell{
+    -fx-alignment: center;
+    -fx-font-size: 15px;
+    -fx-text-fill: #00cc00;
+}
+
+.label{
+    -fx-text-fill: red; /* Ustawienie koloru tekstu na czerwony */
+    -fx-font-size: 20px; /* Ustawienie rozmiaru tekstu na 16 pikseli */
+}
+
+.table-row-cell:empty{
+    -fx-background-color: white;
+    -fx-text-fill: white;
+    -fx-font-size: 0px;
+}
+
+.table_row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+    -fx-text-fill: white;
+    -fx-font-size: 0px;
+}

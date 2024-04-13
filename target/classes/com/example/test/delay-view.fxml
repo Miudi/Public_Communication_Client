@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.DelayController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label fx:id="liniaLabel" text="Linia: " textAlignment="CENTER">
+      <font>
+         <Font name="Arial Bold" size="30.0" />
+      </font></Label>
+   <GridPane prefHeight="134.0" prefWidth="634.0">
+     <columnConstraints>
+       <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints vgrow="SOMETIMES" />
+         <RowConstraints vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <Button fx:id="wartosc" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handle_ustaw" text="-5 min" textAlignment="CENTER">
+            <font>
+               <Font size="20.0" />
+            </font></Button>
+         <Button fx:id="wartosc" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handle_ustaw" text="-1 min" textAlignment="CENTER" GridPane.columnIndex="1">
+            <font>
+               <Font size="20.0" />
+            </font></Button>
+         <Button fx:id="wartosc" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handle_ustaw" text="+/- 0 min" textAlignment="CENTER" GridPane.columnIndex="2">
+            <font>
+               <Font size="20.0" />
+            </font></Button>
+         <Button fx:id="wartosc" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handle_ustaw" text="+1 min" textAlignment="CENTER" GridPane.columnIndex="3">
+            <font>
+               <Font size="20.0" />
+            </font></Button>
+         <Button fx:id="wartosc" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handle_ustaw" text="+5 min" textAlignment="CENTER" GridPane.columnIndex="4">
+            <font>
+               <Font size="20.0" />
+            </font></Button>
+         <Label fx:id="odjazd" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         <Label fx:id="opoznienie" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+      </children>
+   </GridPane>
+    <Button fx:id="wstecz" onAction="#handle_wstecz" text="Wstecz" textAlignment="CENTER">
+      <font>
+         <Font size="20.0" />
+      </font></Button>
+</VBox>

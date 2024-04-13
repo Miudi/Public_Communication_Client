@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" minHeight="480.0" minWidth="600.0" prefHeight="480.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test.StopController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label fx:id="liniaLabel" alignment="CENTER" contentDisplay="CENTER" text="Linia: " textAlignment="CENTER">
+      <font>
+         <Font name="Arial Bold" size="35.0" />
+      </font></Label>
+    <GridPane fx:id="gridPane" prefHeight="300.0" prefWidth="600.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" />
+        </columnConstraints>
+        <rowConstraints>
+         <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="130.0" valignment="CENTER" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="130.0" minHeight="10.0" prefHeight="130.0" valignment="CENTER" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="340.0" minHeight="190.0" prefHeight="190.0" valignment="TOP" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <VBox fx:id="VBOX_ID" alignment="TOP_CENTER" prefHeight="480.0" prefWidth="300.0" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+      <Label fx:id="przystanekLabel" alignment="CENTER" contentDisplay="CENTER" text="Przystanek: " textAlignment="CENTER">
+         <font>
+            <Font name="Arial" size="25.0" />
+         </font></Label>
+      <Label fx:id="kierunekLabel" alignment="CENTER" contentDisplay="CENTER" text="Kierunek: " textAlignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font></Label>
+    </GridPane>
+    <Button fx:id="wstecz" onAction="#handle_wstecz" text="Wstecz" textAlignment="CENTER">
+      <font>
+         <Font size="20.0" />
+      </font></Button>
+</VBox>
